@@ -21,3 +21,6 @@ jobs:
     - name: docker build python
       run: |
         docker build -t python-test-docker-imdb .
+    - name: docker push
+      run: |
+        docker push python-test-docker-imdb
